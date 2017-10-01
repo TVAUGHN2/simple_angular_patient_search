@@ -5,7 +5,7 @@ HOMEWORK #3
 
 
 HOMEWORK LOCATION:
-
+https://github.com/trvaughn/simple_angular_patient_search
 
 COMPLEXITY [EASY / HARD]: Moderate 
 
