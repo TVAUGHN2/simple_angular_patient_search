@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<h1>
+  {{title}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</h1>
+
+<div>
+  <app-search-text [searchText]="searchText"></app-search-text>
+</div>
+
+<form class="ui large form segment">
+  <div class="field">
+    <label for="name">Name:</label>
+    <input name="name" id="name" #newname placeholder="Enter search field and search value" (keyup)="updateText(newname)">
+  </div>
+
+	<button (click)="search(newname)"
+		class="ui positive right floated button">
+		Search Patients
+  </button>
+
+
+  
+</form>
+
+<div class="ui grid posts">
+   
+</div>
+<div>
+  <body>
+    <app-patient-list [patientList]="patientList"></app-patient-list>
+  </body>
+  
+  <body>
+      <h4 class="ui header">Patient Names:</h4>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Doctor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of patientList.list">
+            <td></td>
+            <td>{{ patient.firstName }}</td>
+            <td>{{ patient.lastName }}</td>
+            <td>{{ patient.emailAddress }}</td>
+            <td>{{ patient.doctorName }}</td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</div>
+
+</html>
+
+<script>
+
+
+</script>
+

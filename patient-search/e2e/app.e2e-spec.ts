@@ -1,10 +1,10 @@
-import { AngularSearchPage } from './app.po';
+import { PatientSearchPage } from './app.po';
 
-describe('angular-search App', () => {
-  let page: AngularSearchPage;
+describe('patient-search App', () => {
+  let page: PatientSearchPage;
 
   beforeEach(() => {
-    page = new AngularSearchPage();
+    page = new PatientSearchPage();
   });
 
   it('should display message saying app works', () => {

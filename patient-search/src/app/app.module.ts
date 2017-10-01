@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ClassListComponent } from './class-list/class-list.component';
+import { PatientListComponent } from './patient-list/patient-list.component';
+import { SearchTextComponent } from './search-text/search-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClassListComponent
+    PatientListComponent,
+    SearchTextComponent
   ],
   imports: [
     BrowserModule,
@@ -18,5 +20,7 @@ import { ClassListComponent } from './class-list/class-list.component';
   ],
   providers: [],
   bootstrap: [AppComponent]
+
+  
 })
 export class AppModule { }

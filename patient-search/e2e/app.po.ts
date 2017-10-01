@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class AngularSearchPage {
+export class PatientSearchPage {
   navigateTo() {
     return browser.get('/');
   }
